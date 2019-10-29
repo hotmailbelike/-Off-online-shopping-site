@@ -1,0 +1,99 @@
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.cart-item-image {
+  width: 100%;
+  height: 100;
+}
+
+.quantity {
+  width: 30% !important;
+  margin-bottom: 1rem;
+  height: 1.5rem;
+}
+
+#navbar {
+  margin-bottom: 90px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10.8%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 92.3%;
+  /* padding: 20px; */
+  height: 25%;
+  float: left;
+}
+
+.view-modal-dialog {
+  height: 70%; /* = 90% of the .modal-backdrop block = %90 of the screen */
+}
+.view-modal-content {
+  height: 70%; /* = 100% of the .modal-dialog block */
+}
+
+.modal-img {
+  height: 100%;
+  /* width: 2500% !important */
+}
+
+.modal-description {
+  font-size: medium;
+  /* padding: 0px; */
+}
+
+.quantity-label {
+  margin-bottom: 1rem !important;
+}
+
+.spacer {
+  height: 2rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.total-cart-item-price {
+  border-left: rgb(234, 0, 255) solid 2px;
+  border-top: rgb(234, 0, 255) solid 2px;
+  border-bottom: rgb(234, 0, 255) solid 2px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cart-item-price {
+  font-size: 1.1rem;
+}
+
+.text-purple {
+  color: rgb(97, 0, 97);
+}
+
+.fa-stack[data-count]:after {
+  position: absolute;
+  /* right: 0%; */
+  top: 0%;
+  left: 50%;
+  content: attr(data-count);
+  font-size: 60%;
+  padding: 0.5em;
+  border-radius: 999px;
+  line-height: 0.5em;
+  color: rgb(251, 255, 190);
+
+  /* color:$shopping-cart-red; */
+  text-align: center;
+  min-width: 1.5em;
+  font-weight: bold;
+  background: #575d5f;
+  /* border-style: solid; */
+}
