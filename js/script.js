@@ -42,10 +42,10 @@ if (items.length != 0) {
       <div class="modal-content view-modal-content">\
         <div class="modal-header">\
           <div class="row">\
-            <h5 class="modal-title ml-3 pr-4">' + e.name + '</h5>\
+            <h5 class="modal-title ml-3 pr-3">' + e.name + '</h5>\
           </div>\
           <div class="row">\
-            <p class="modal-title muted pl-4">In Stock</p>\
+            <p class="modal-title muted pl-4 ml-2">In Stock</p>\
           </div>\
           <button class="close" data-dismiss="modal">&times;</button>\
         </div>\
@@ -59,7 +59,7 @@ if (items.length != 0) {
                   <p class="modal-description lead">' + e.description + '</p>\
                 </div>\
                 <div class="col">\
-                  <button class="btn btn-outline-success px-4" type="button">' + e.price + '</button>\
+                  <button class="btn btn-outline-success px-4" type="button">$' + e.price + '</button>\
                 </div>\
                 <div class="col">\
                   <button id="add-to-cart-from-modal-view-' + modalCount + '" class="mt-3 btn btn-outline-success add-to-cart-from-modal-view" type="button">\
@@ -69,7 +69,7 @@ if (items.length != 0) {
               </div>\
             </div>\
           </div>\
-          <div class="modal-footer">\
+          <div class="modal-footer bg-white">\
             <button class="btn btn-secondary" data-dismiss="modal">Close</button>\
           </div>\
         </div>\
@@ -183,9 +183,9 @@ $('.add-to-cart-from-modal-view').click(function() {
     .children('button', 0)
     .text();
 
-  price = parseFloat(price);
+  price = parseFloat(price.slice(1));
 
-  // console.log(price);
+  console.log(price);
   var img_src = $(this)
     .parent()
     .parent()
@@ -312,10 +312,10 @@ $('#add').click(e => {
       <div class="modal-content view-modal-content">\
         <div class="modal-header">\
           <div class="row">\
-            <h5 class="modal-title ml-3 pr-4">' + name + '</h5>\
+            <h5 class="modal-title ml-3 pr-3">' + name + '</h5>\
           </div>\
           <div class="row">\
-            <p class="modal-title muted pl-4">In Stock</p>\
+            <p class="modal-title muted pl-4 ml-2">In Stock</p>\
           </div>\
           <button class="close" data-dismiss="modal">&times;</button>\
         </div>\
@@ -329,7 +329,7 @@ $('#add').click(e => {
                   <p class="modal-description lead">' + description + '</p>\
                 </div>\
                 <div class="col">\
-                  <button class="btn btn-outline-success px-4" type="button">' + price + '</button>\
+                  <button class="btn btn-outline-success px-4" type="button">$' + price + '</button>\
                 </div>\
                 <div class="col">\
                   <button id="add-to-cart-from-modal-view-' + modalCount + '" class="mt-3 btn btn-outline-success add-to-cart-from-modal-view" type="button">\
@@ -339,7 +339,7 @@ $('#add').click(e => {
               </div>\
             </div>\
           </div>\
-          <div class="modal-footer">\
+          <div class="modal-footer bg-white">\
             <button class="btn btn-secondary" data-dismiss="modal">Close</button>\
           </div>\
         </div>\

@@ -20,11 +20,11 @@ img {
 
 .overlay {
   position: absolute;
-  bottom: 10.8%;
+  bottom: 9%;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 92.3%;
+  width: 92%;
   /* padding: 20px; */
   height: 25%;
   float: left;
@@ -96,4 +96,8 @@ hr {
   font-weight: bold;
   background: #575d5f;
   /* border-style: solid; */
+}
+
+h5.modal-title.ml-3.pr-3 {
+  border-right: #575d5f 0.1rem dashed;
 }
