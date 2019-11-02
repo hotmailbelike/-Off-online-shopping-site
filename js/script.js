@@ -110,7 +110,7 @@ $(document).on('click', '.remove', function() {
   updateCartCount();
 });
 
-$('.add-to-cart-from-view').click(function() {
+$(document).on('click', '.add-to-cart-from-view', function() {
   // console.log('clicked from view');
 
   $(this).attr('disabled', true);
@@ -138,7 +138,8 @@ $('.add-to-cart-from-view').click(function() {
   // console.log(price);
 
   var btn_number = $(this).attr('id');
-  btn_number = btn_number[btn_number.length - 1];
+  btn_number = btn_number.replace(/\D/g, '');
+  $('#add-to-cart-from-modal-view-' + btn_number).attr('disabled', true);
 
   let temp = $('<div class="row">\
       <div id="cart-item-image" class="col-5">\
@@ -159,8 +160,6 @@ $('.add-to-cart-from-view').click(function() {
 
   $('#cart-item').append(temp);
 
-  $('#add-to-cart-from-modal-view-' + btn_number).attr('disabled', true);
-
   // $('#add-to-cart-from-modal-view-' + 0).attr('disabled', true);
   // console.log(btn_number);
   total_bill += price;
@@ -172,7 +171,7 @@ $('.add-to-cart-from-view').click(function() {
   updateCartCount();
 });
 
-$('.add-to-cart-from-modal-view').click(function() {
+$(document).on('click', '.add-to-cart-from-modal-view', function() {
   // console.log('clicked from modal');
 
   $(this).attr('disabled', true);
@@ -210,7 +209,8 @@ $('.add-to-cart-from-modal-view').click(function() {
   // console.log(title);
 
   var btn_number = $(this).attr('id');
-  btn_number = btn_number[btn_number.length - 1];
+  btn_number = btn_number.replace(/\D/g, '');
+  $('#add-to-cart-from-view-' + btn_number).attr('disabled', true);
 
   let temp = $('<div class="row">\
       <div id="cart-item-image" class="col-5">\
@@ -230,8 +230,6 @@ $('.add-to-cart-from-modal-view').click(function() {
     <div class="spacer"><hr /></div>');
 
   $('#cart-item').append(temp);
-
-  $('#add-to-cart-from-view-' + btn_number).attr('disabled', true);
 
   total_bill += price;
   $('#total-bill').text('$' + total_bill);
@@ -272,7 +270,7 @@ $(document).on('input', '.cart-quantity', function() {
   checkItemsInCart();
 });
 
-$('#add').click(e => {
+$(document).on('click', '#add', function() {
   var name = $('#name').val();
   var description = $('#description').val();
   var url = $('#url').val();
