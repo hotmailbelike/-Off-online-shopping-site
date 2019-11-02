@@ -3,7 +3,8 @@
 ## CSE 309 Assignment 1
 
 
-**Project Description:** Add your own favorite One Piece anime wallpaper for sale! 
+**Project Description:** 
+Add your own favorite One Piece anime wallpaper for sale! 
 <br/><br/>
 ---
 <br/>
