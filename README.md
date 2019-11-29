@@ -42,8 +42,20 @@ Add your own favorite One Piece anime wallpaper for sale!
 ---
 <br/>
 
+**Chat Interactions:**
+
+![chat](https://user-images.githubusercontent.com/25118296/69867499-2b2c2680-12d1-11ea-8081-8d55fe9ab462.gif)
+
+<br/><br/>
+
+---
+<br/>
+
 **How to use this:**
 1. Clone or download as zip (and extract)
-2. Open "index.html" file with chrome
+2. Open Command Prompt or Terminal in the file directory
+3. Type in, "npm i"
+4. After doing 3, type in, "nodemon server.js"
+5. In your web browser, in the URL, type in, "localhost:3000/site"
 3. That's it! Have fun!
 
