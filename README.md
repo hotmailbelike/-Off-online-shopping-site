@@ -57,7 +57,7 @@ Add your own favorite One Piece anime wallpaper for sale!
 3. Clone or download as zip (and extract)
 4. Open Command Prompt or Terminal in the file directory
 5. Type in, "npm i"
-5. After doing 3, type in, "nodemon server.js"
+5. After you regain control, type in, "nodemon server.js"
 6. In your web browser, in the URL, type in, "localhost:3000/site"
 7. That's it! Have fun!
 
