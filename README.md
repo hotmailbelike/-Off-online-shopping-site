@@ -1,6 +1,5 @@
 ## [Off]-online-shopping-site
 
-## CSE 309 Assignment 1
 
 
 **Project Description:** 
@@ -54,10 +53,11 @@ Add your own favorite One Piece anime wallpaper for sale!
 <br/>
 
 **How to use this:**
-1. Clone or download as zip (and extract)
-2. Open Command Prompt or Terminal in the file directory
-3. Type in, "npm i"
-4. After doing 3, type in, "nodemon server.js"
-5. In your web browser, in the URL, type in, "localhost:3000/site"
-3. That's it! Have fun!
+1. Install Nodejs. (can be found in this link: https://nodejs.org/en/)
+3. Clone or download as zip (and extract)
+4. Open Command Prompt or Terminal in the file directory
+5. Type in, "npm i"
+5. After doing 3, type in, "nodemon server.js"
+6. In your web browser, in the URL, type in, "localhost:3000/site"
+7. That's it! Have fun!
 
